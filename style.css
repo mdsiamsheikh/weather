@@ -1,0 +1,39 @@
+.container {
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(13, 13, 17);
+    padding: 44px;
+  }
+
+  .canty {
+    background: rgb(173, 167, 85);
+  }
+
+  #submit-btn {
+  width: 100px;
+  height: 30px;
+  font-size: 22px;
+  color: rgb(24, 25, 26);
+  background: rgb(211, 60, 191);
+}
+
+#city {
+  justify-content: center;
+  text-align: center;
+  font-size: 33px;
+}
+
+#input-btn { 
+  width: 26%;
+  height: 26%;
+  font-size: 22px;
+  color: #000;
+  background: rgb(163, 39, 140);
+}
+
+#temp {
+  color: #000;
+  font-size: 23px;
+}
