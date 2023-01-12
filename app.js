@@ -3,7 +3,7 @@ submitBtn.addEventListener("click", function () {
   const inputbtn = document.getElementById("input-btn").value;
 
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${inputbtn}&appid=4450c049dc640f47383e2b1a34a897df`
+    `https://api.openweathermap.org/data/2.5/weather?q=${inputbtn}&appid=4450c049dc640f47383e2b1a34a897df`
   )
     .then((Response) => Response.json())
     .then((data) => {
@@ -13,7 +13,8 @@ submitBtn.addEventListener("click", function () {
       const description = data.weather[0].description;
 
       document.getElementById("city").innerText = cityName;
-      document.getElementById("temp").innerText = temp.toFixed(2);
+      document.getElementById("temp").innerText = temp.toFixed(2) + " C 0";
       document.getElementById("des").innerText = description;
     });
+  document.getElementById("input-btn").value = "";
 });
